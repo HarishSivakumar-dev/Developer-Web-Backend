@@ -21,16 +21,25 @@ public class EmbeddingService
 
 	public List<Document> chunkTexts()
 	{
-		TextReader textReader = new TextReader("classpath:static/texts.txt");
+		TextReader textReader = new TextReader("classpath:/static/Harish_Sivakumar_College_Journey.txt");
 		List<Document> ls= textReader.get();
 		
 		TokenTextSplitter splitter = TokenTextSplitter.builder()
 					                                  .withChunkSize(100)
-					                                  .withMaxNumChunks(20)
+					                                  .withMaxNumChunks(1000)
 					                                  .withEncodingType(EncodingType.O200K_BASE)
 					                                  .build();
 		List<Document> str= splitter.split(ls);
-		return str;
+		List<Document> cleaned= str.stream()
+				                   .map(r->{
+				                	   String cnt= r.getText().replace("\u0000", "");
+				                	   return Document.builder()
+				                				  	  .text(cnt)
+				                				      .metadata(r.getMetadata())
+				                				      .build();
+				                   })
+				                   .toList();
+		return cleaned;
 	}
 	public String loadVectorDbWithEmbeddings() 
 	{
