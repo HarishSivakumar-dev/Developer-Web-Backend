@@ -29,6 +29,10 @@ public class ChatService
 				                           .build();
 		
 		List<Document> docs= vectorStore.similaritySearch(search);
+		for(Document doc : docs)
+		{
+			System.out.println("Document Text: " + doc.getText());
+		}
 		
 		StringBuilder sb= new StringBuilder();
 		
