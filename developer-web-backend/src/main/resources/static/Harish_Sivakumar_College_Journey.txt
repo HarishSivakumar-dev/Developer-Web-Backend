@@ -1,0 +1,140 @@
+HARISH SIVAKUMAR
+College Journey Summary - from ECE Student to Backend/Platform Engineer
+As of September 12, 2026
+
+================================================================
+ABOUT
+================================================================
+From Salem, Tamil Nadu. Loves nature, adventure, exploration, and travel.
+Plays badminton, is a self-described gym freak who cares deeply about
+health and fitness, and prefers healthy foods. Also strong in English
+communication and stage speaking (TEDx-style).
+
+================================================================
+EDUCATION
+================================================================
+- School: Holy Cross Matriculation HSS, Salem - SSLC 93.66%, HSC 91.33%,
+  Maths 95%
+- College: B.E. ECE, Bannari Amman Institute of Technology (BIT),
+  Sathyamangalam (Anna University), started Sep 1, 2024 - now 3rd year,
+  5th semester
+- CGPA: ~7.9 initially -> 7.73 (3rd sem) -> ~7.3 (latest)
+- Concern: worried an ECE background (RCA, Op-amps, core subjects) may
+  not translate well to software placements - compensating with strong
+  projects, DSA and cloud/DevOps skills
+
+================================================================
+CAREER DIRECTION
+================================================================
+Deliberately moved away from core ECE toward Backend / Platform /
+Infrastructure Software: Java -> Spring Boot -> Backend -> Distributed
+Systems -> Cloud -> DevOps -> AI/RAG. Not focused on frontend-heavy work
+(has used Angular/CSS but prefers backend).
+
+Target roles:
+Software/backend roles in Bengaluru or other metros, roughly Rs. 6-8 LPA,
+prioritizing a genuinely good company over just the package. Also
+exploring internships, off-campus outreach (Lifo, PickYourTrail), and
+Fiverr rather than relying only on campus placements.
+
+Companies considered:
+TCS, Cognizant, Infosys, Capgemini, HCL, LTIMindtree, Presidio, Mr.
+Cooper, KaarTech, Xebia, Juspay; also interested in Palantir,
+BlackRock/Blackstone-type roles, and consulting/finance.
+
+Beyond engineering:
+Accepted into McKinsey Forward 2026; considering CAT/MBA and studying
+abroad (Germany) as longer-term options, weighed against family budget
+constraints.
+
+================================================================
+KEY ACHIEVEMENTS
+================================================================
+- BIT Hackathon Season 2 winner (Apr 2025) - EcoBites (Spring Boot, JPA,
+  MySQL)
+- ICAME 2026 Best Paper Award - SRM IST, presented Mar 19, 2026 (Cloud
+  ERP, manufacturing, supply chain, AI, finance; 500+ papers at the
+  event)
+- VIT Chennai 24-hr AI hackathon - built CredenSure and a Phi RAG
+  chatbot; recognized by Zuntra CEO Harini
+- McKinsey Forward 2026 - accepted
+
+================================================================
+FLAGSHIP PROJECTS
+================================================================
+Tick-It (GitHub: HarishSivakumar-dev/Tick-It) - 350+ commits
+Jira-like enterprise ticketing/grievance platform built as microservices:
+Auth, Users, Projects, Tickets (+planned Notifications/Comments/Chat).
+Uses Eureka, Spring Cloud Config Server, API Gateway, OpenFeign. Security
+via Spring Security, JWT (with identity derived from auth context, not
+client-supplied IDs), Google OAuth2, Redis-based sessions/logout/
+blacklist. Redis caching for profiles/projects/tickets; atomic Redis
+ZSET + Lua rate limiting (~10 req/min on auth). Kafka and WebSockets/
+STOMP planned for notifications and real-time chat. Deployed with
+Docker/Docker Compose.
+
+SkillSprint (GitHub: HarishSivakumar-dev/SkillSprint)
+Enterprise corporate learning/certification platform (not blockchain-
+based). 32 tables, 5 roles (USER -> SUPER_ADMIN), Redis caching, rate
+limiting, schedulers, MySQL, Docker (image v3->v4). Backend complete.
+
+Developer Portfolio
+harish-developer-portfolio-lac.vercel.app - positioned as "Backend
+Developer & Systems Architect." Built partly with AI/vibe-coding;
+personally handled chatbot integration and account/form logic. Reviewed
+at 8.3/10 overall (backend credibility 9/10).
+
+================================================================
+DSA / PROBLEM SOLVING
+================================================================
+LeetCode progression: 169 -> 205 -> 300 -> 320 -> 331 -> 333 (latest:
+231 Easy / 101 Medium / 1 Hard), also tracking the 150-active-days
+badge. Learning style: hint -> think -> attempt -> debug -> final
+solution - prefers to own the solution rather than be given it.
+
+Recent focus: fixed-size sliding window (LC 643, 1343, 1456, 2461, 438)
+and trees/recursion/backtracking (LC 129, 112, 113, 1038/538, 654,
+1315), plus graphs, Fenwick trees, and aptitude-style problems.
+
+================================================================
+TECHNICAL STACK
+================================================================
+Backend            : Java, Spring Boot, Spring Data JPA, REST, Spring
+                      Security, JWT, OAuth2, OpenFeign
+Microservices       : Eureka, Config Server, API Gateway, Feign
+Data                : MySQL, PostgreSQL, pgvector
+Caching             : Redis, RedisTemplate, RedisCacheManager, @Cacheable
+Messaging/Real-time : Kafka (KRaft, consumer groups, offsets),
+                      WebSockets/STOMP
+DevOps              : Docker, Docker Compose, Nginx, AWS EC2, SSH,
+                      networking
+AI/RAG              : Spring AI, Gemini, embeddings, vector DBs,
+                      similarity search
+
+Currently exploring RAG at implementation level (File -> Document ->
+Chunking -> Embedding -> Vector DB -> Similarity search -> Prompt ->
+LLM), preferring manual configuration (EmbeddingModel, JdbcTemplate,
+PgVectorStore) over relying purely on starter auto-configuration.
+Recently hit a pgvector HNSW 2000-dimension limit while experimenting
+with a custom embeddings table.
+
+================================================================
+OVERALL TRAJECTORY
+================================================================
+1st year: learning programming -> 2nd year: real backend apps -> 2nd/3rd
+year: microservices, security, Redis, Docker -> 3rd year: distributed
+systems, Kafka, WebSockets, cloud -> now: RAG, embeddings, vector
+databases.
+
+Questions have matured from "how do I implement this" to "what happens
+if the broker dies," "how does FIND_COORDINATOR work," or "how does the
+vector store get its embedding model" - reflecting a shift from
+application programmer toward backend/systems engineer. Placements are
+expected to begin around 6th semester, with intensified activity around
+January 2027; the current 5th semester is being treated as a focused
+preparation window (DSA, aptitude, projects, communication).
+
+The core story: not just learning individual technologies, but
+deliberately transforming from "ECE student trying to get into
+software" into "engineering student with a genuine backend/systems
+profile."
