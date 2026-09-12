@@ -15,6 +15,7 @@ public class PgVectorConfig
 	{
 		PgVectorStore config = PgVectorStore.builder(jdbcTemplate, model)
 											.initializeSchema(true)
+											.dimensions(1536)
 										  	.vectorTableName("Harish_Embeddings")
 										  	.build();	
 		
