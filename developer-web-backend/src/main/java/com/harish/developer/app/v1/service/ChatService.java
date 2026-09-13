@@ -43,7 +43,7 @@ public class ChatService
 		
 		String context= sb.toString();
 		String promptMessage= """
-								Answer the question based on the context below, if the question is not from the context, answer based on your knowledge , and for any responses, dont mention "based on the given context" :
+								Answer the question based on the context below, if the question is not from the context, answer based on your knowledge , and for any responses, dont mention "based on the given context" and ensure the response is not long :
 								
 								Context:
 								%s
@@ -59,7 +59,7 @@ public class ChatService
 		
 		ChatResponse res=chatModel.call(prompt);
 		
-		return res.getResult().toString();
+		return res.getResult().getOutput().getText();
 	}
 	
 	
