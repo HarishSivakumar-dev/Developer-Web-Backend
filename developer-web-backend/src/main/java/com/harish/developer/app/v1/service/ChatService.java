@@ -43,7 +43,7 @@ public class ChatService
 		
 		String context= sb.toString();
 		String promptMessage= """
-								Answer the question based on the context below:
+								Answer the question based on the context below, if the question is not from the context, answer based on your knowledge , and for any responses, dont mention "based on the given context" :
 								
 								Context:
 								%s
