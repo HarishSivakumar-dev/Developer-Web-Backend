@@ -1,6 +1,5 @@
 HARISH SIVAKUMAR
 College Journey Summary - from ECE Student to Backend/Platform Engineer
-As of September 12, 2026
 
 ================================================================
 ABOUT
@@ -22,6 +21,7 @@ EDUCATION
 - Concern: worried an ECE background (RCA, Op-amps, core subjects) may
   not translate well to software placements - compensating with strong
   projects, DSA and cloud/DevOps skills
+- he is currently in his 5th semester, with placements expected to begin around the corner
 
 ================================================================
 CAREER DIRECTION
