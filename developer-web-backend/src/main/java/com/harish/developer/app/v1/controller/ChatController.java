@@ -2,6 +2,7 @@ package com.harish.developer.app.v1.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +21,7 @@ public class ChatController
 	private EmbeddingService embeddingService;
 	
 	@PostMapping("/send")
+	@CrossOrigin(origins = "http://localhost:5173")
 	public ResponseEntity<String> sendMessage(@RequestBody ChatDto dto) 
 	{
 		String res=chatService.sendMesage(dto.getMessage());
