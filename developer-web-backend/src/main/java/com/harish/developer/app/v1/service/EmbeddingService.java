@@ -25,8 +25,8 @@ public class EmbeddingService
 		List<Document> ls= textReader.get();
 		
 		TokenTextSplitter splitter = TokenTextSplitter.builder()
-					                                  .withChunkSize(100)
-					                                  .withMaxNumChunks(1000)
+					                                  .withChunkSize(25)
+					                                  .withMaxNumChunks(250)
 					                                  .withEncodingType(EncodingType.O200K_BASE)
 					                                  .build();
 		List<Document> str= splitter.split(ls);
