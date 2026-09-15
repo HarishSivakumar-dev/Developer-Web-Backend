@@ -24,7 +24,7 @@ public class ChatService
 	public String sendMesage(String message) 
 	{
 		SearchRequest search= SearchRequest.builder()
-				                           .topK(3)
+				                           .topK(15)
 				                           .query(message)
 				                           .build();
 		
