@@ -18,7 +18,7 @@ public class EmailController
 	private EmailService emailService;
 	
 	@PostMapping("/send")
-	@CrossOrigin(origins = "http://localhost:5173")
+	@CrossOrigin(origins = "https://harish-developer-portfolio-lac.vercel.app")
 	public ResponseEntity<String> sendEmail(@RequestBody EmailRequest emailRequest)
 	{
 		emailService.sendEmail(emailRequest.getName(), emailRequest.getEmail(), emailRequest.getMessage());
