@@ -20,9 +20,9 @@
     </dependencies>
 </dependencyManagement>
     <groupId>com</groupId>
-    <artifactId>developer-web-backend</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>developer-web-backend</name>
+    <artifactId>Harish-Developer-Backend</artifactId>
+    <version>1.0</version>
+    <name>Harish-Developer-Backend</name>
 	<description>Backend configurations and server application for developer portfolio</description>
 	<url/>
 	<licenses>
@@ -91,11 +91,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>demo</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
