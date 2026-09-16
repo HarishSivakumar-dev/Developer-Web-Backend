@@ -21,7 +21,7 @@
 </dependencyManagement>
     <groupId>com</groupId>
     <artifactId>Harish-Developer-Backend</artifactId>
-    <version>1.0</version>
+    <version>2.0</version>
     <name>Harish-Developer-Backend</name>
 	<description>Backend configurations and server application for developer portfolio</description>
 	<url/>
