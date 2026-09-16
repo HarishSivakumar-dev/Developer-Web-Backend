@@ -21,7 +21,7 @@ public class ChatController
 	private EmbeddingService embeddingService;
 	
 	@PostMapping("/send")
-	@CrossOrigin(origins = "http://localhost:5173")
+	@CrossOrigin(origins = "https://harish-developer-portfolio-lac.vercel.app")
 	public ResponseEntity<String> sendMessage(@RequestBody ChatDto dto) 
 	{
 		String res=chatService.sendMesage(dto.getMessage());
@@ -29,6 +29,7 @@ public class ChatController
 	}
 	
 	@PostMapping("/dump")
+	@CrossOrigin(origins = "https://harish-developer-portfolio-lac.vercel.app")
 	public ResponseEntity<String> dumpEmbeddings() 
 	{
 		String res= embeddingService.loadVectorDbWithEmbeddings();
